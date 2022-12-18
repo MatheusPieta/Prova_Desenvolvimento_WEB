@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Tahoma", "HelveticaNeue", "Helvetica Neue", sans-serif;
+}
+
+header {
+     width: 100%;
+     min-width: 700px;
+     height: 120px;
+     border-bottom: 1px solid black;}
+
+a{ text-decoration: none;}
+
+
+.frete{background: rgb(0, 0, 0);
+     width: 100%; 
+     height: 40px;}
+
+.frete h1{color: rgb(255, 255, 255); 
+     text-align: center; 
+     font-family: "Ubuntu", "HelveticaNeue", "Helvetica Neue", sans-serif; 
+     letter-spacing: 2px; 
+     position: relative;
+     padding: 10px;
+     font-size: 1em;}
+
+.logo-parent{width: 10%;
+     height: 90%;
+     float: left; 
+     display: flex; 
+     align-items: center;}
+
+.logo-parent img{height: 90%;
+     padding-left: 20px;}
+
+.menu{
+     width: 100%;
+     height: 80px;
+     background: white; 
+     float: center;}
+
+.menu ul{
+     padding-left: 30px;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+     justify-content: flex-end;}
+
+.menu ul li{padding: 30px;
+     cursor: pointer;}
+
+.menu ul li:hover{ border-bottom: 3px solid black;}
+
+.menu ul li a{color: black;
+     cursor: pointer;
+      height: 100%;}
+.menu ul li a:hover{ color: rgb(58, 56, 56);}
+
+.wrap{ 
+     width: 100%; 
+     display: flex; 
+     justify-content: center; 
+     flex-wrap: wrap; 
+     align-items: center;}
+
+.content{
+     width:  90%; 
+     height: 100%; 
+     padding: 50px 0;}
+
+.content h2{ 
+     text-align: center; 
+     font-size: 3em; 
+     padding: 10px;}
+
+.cards{ 
+     display: flex; 
+     justify-content: center; 
+     flex-direction: row;}
+
+.card-shadow{ 
+     margin: 0 10px; 
+     width: 30%; 
+     padding: 30px; 
+     text-align: center; 
+     min-height: 250px; 
+     height: 250px; 
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0.12);}
+
+.card-shadow img {
+     width: 180px;}
+
+.parallax {
+     height: 300px; 
+     display: flex; 
+     width: 100%; 
+     align-items: center; 
+     background-image: url("../imgs/parallax.jpg"); 
+     background-size: cover; 
+     background-color: rgba(0, 0, 0, 0.35); 
+     background-blend-mode: multiply; 
+     background-attachment: fixed;}
+
+.parallax span{ 
+     font-size: 3em; 
+     color: #FFF; 
+     text-align: center; 
+     width: 100%;}
+
+.linha {
+     width: 70%; 
+     margin: 0 auto; 
+     overflow: auto; 
+     padding: 20px 0; }
+
+.conteudo {
+     line-height: 1.9;
+     text-align: justify; 
+     font-size: 1em;}
+
+.conteudo h1 {
+     text-align: center; 
+     font-size: 1.5em ;}
+
+.conteudo h2 {
+     font-size: 1.2em ;}
+
+.colecoes, .img-row-1{ 
+     width: 100%;}
+
+.colecoes h2{
+     padding: 10px;}
+
+.colecoes div figure{ 
+     width: 33.3%; 
+     height: 300px; 
+     overflow: hidden;}
+
+.colecoes div figure:hover img{ 
+     -webkit-transform: rotate(0) scale(1); 
+     transform: rotate(0) scale(1);}
+
+.colecoes div img{ 
+     height: 330px; 
+     width: 100%; 
+     -webkit-transform: rotate(15deg) scale(1.4); 
+     transform: rotate(15deg) scale(1.4); 
+     -webkit-transition: .3s ease-in-out; 
+     transition: .3s ease-in-out ;}
+
+.colecoes div{ 
+     display: flex; 
+     flex-direction: row;}
+
+footer{ 
+     width: 100%; 
+     background: black; 
+     color: #FFF; 
+     height: 80px; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center;
+}
+
+.slideshow-container {
+     width: 100%;
+     position: relative;
+     margin: auto;
+   }
+
+   .anterior, .proximo {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+   }
+
+   .proximo {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+   }
+   
+   .anterior:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+   }
+
+   .paginas {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+   }
+
+   .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+   }
+   
+   .active, .dot:hover {
+     background-color: #717171;
+   }
+
+   .fade {
+        display: none;
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+   
+   @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+@media screen and (max-width: 734px){
+     .cards { flex-wrap: wrap;}
+     .cards div { width: 90%; margin: 5px 0;}
+     .parallax span{ text-align: center;}
+     .container-background {height: 536px ; width: 100%; background-size: over; align-items: center; background-image: url('../imgs/Banner\ 1\ Celular.jpg');}
+     .colecoes div{flex-wrap: wrap; display: flex; justify-content: center;}
+     .colecoes div figure{ width: 90%; justify-content: center;}
+     .rodape {text-align: center;}
+}
+

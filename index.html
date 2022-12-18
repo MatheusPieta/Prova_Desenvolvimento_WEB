@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pieta E-Shop</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/js/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="frete">
+            <h1>FRETE GRÁTIS POR TEMPO LIMITADO</h1>
+        </div>
+        <nav class="menu">
+            <div class="logo-parent">
+                <img src="./assets/imgs/Logo.PNG" title="Pieta E-Shop" alt="O Melhor Site de Compras">
+            </div>
+            <ul>
+                <li><a href="./index.html"><b>Início</b></a></li>
+                <li><a href="./quem-somos.html"><b>Quem Somos</b></a></li>
+                <li><a href="./status-pedido.html"><b>Rastrear Pedido</b></a></li>
+                <li><a href="./perguntas-frequentes.html"><b>Perguntas Frequentes</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="paginas">1/2</div>
+            <img src="./assets/imgs/Banner 1.jpg" style="width:100%">
+        </div>
+
+        <div class="slides fade">
+            <div class="paginas">2/2</div>
+            <img src="./assets/imgs/Banner 2.jpg" style="width:100%">
+        </div>
+
+        <a class="anterior" onclick="mudarSlides(-1)">&#10094;</a>
+        <a class="proximo" onclick="mudarSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="atualSlide(1)"></span>
+        <span class="dot" onclick="atualSlide(2)"></span>
+    </div>
+    <div class="wrap">
+        <div class="content" id="sobre">
+            <div class="title">
+                <h2><b>Beneficios de Comprar Conosco</b></h2>
+            </div>
+            <div class="cards">
+                <div class="card-shadow">
+                    <img src="./assets/imgs/cartao-de-credito.png">
+                    <h3>Praticidade</h3>
+                    <span>Pague através de boleto ou cartão de crédito, como preferir.</span>
+                </div>
+                <div class="card-shadow">
+                    <img src="./assets/imgs/dinheiro-de-volta.png">
+                    <h3>Segurança e Entrega Garantida</h3>
+                    <span> Se você não gostar do produto por qualquer motivo, garantimos seu dinheiro de volta!</span>
+                </div>
+                <div class="card-shadow">
+                    <img src="./assets/imgs/caminhao-de-entrega.png">
+                    <h3>Frete Grátis</h3>
+                    <span>Toda a nossa lojá está com frete grátis para todo o Brasil durante esse mês, aproveite!</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="parallax">
+            <span><b>O MELHOR DO MUNDO GEEK</b></span>
+        </div>
+
+        <div class="conteudo" style="text-align: center;">
+            <div class="linha">
+                <h1>Este é um site de exposição</h1>
+                <p>Neste site apresentamos nossos produtos, promoções e história da loja.<br>
+                    Você pode solicitar orçamentos e realizar pedidos pelo nosso e-mail ou whatsapp.<br>
+                    Nosso e-mail para compras é: compras@pietaeshop.com<br>
+                    Nosso WhatsApp é: (47) 9 9999-9999
+                </p>
+            </div>
+        </div>
+
+        <div class="content" id="colecoes">
+            <div class="title">
+                <h2> Coleções </h2>
+            </div>
+            <div class="colecoes">
+                <div class="img-row-1">
+                    <figure>
+                        <img src="./assets/imgs/action-figure.jpg" alt="Action-Figures" title="Action-Figures">
+                    </figure>
+                    <figure>
+                        <img src="./assets/imgs/Gameboy.jpg" alt="Video Games" title="Video Games">
+                    </figure>
+                    <figure>
+                        <img src="./assets/imgs/Tecnologia.jpg" alt="Tecnologias" title="Tecnologias">
+                    </figure>
+                </div>
+                <div class="img-row-2">
+                    <figure>
+                        <img src="./assets/imgs/Mario .jpg" alt="Mario" title="Mario">
+                    </figure>
+                    <figure>
+                        <img src="./assets/imgs/SmartWatch.jpg" alt="SmartWatch" title="SmartWatch">
+                    </figure>
+                    <figure>
+                        <img src="./assets/imgs/RGB.jpg" alt="RGB" title="RGB">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="rodape"> Desenvolvido Por Crislaine Tatiane Timm e Matheus Pieta da Cunha</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pieta - Status do Pedido</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://unpkg.com/vue@2.1.4/dist/vue.js"></script>
+    <script src="./assets/js/rastreamento.js"></script>
+</head>
+<body>
+    <header>
+        <div class="frete"> 
+            <h1>FRETE GRÁTIS POR TEMPO LIMITADO</h1>
+        </div>
+        <nav class="menu">
+            <div  class="logo-parent">
+                <img src="./assets/imgs/Logo.PNG" title="Pieta E-Shop" alt="O Melhor Site de Compras">
+            </div>
+            <ul>
+                <li><a href="./index.html"><b>Início</b></a></li>
+                <li><a href="./quem-somos.html"><b>Quem Somos</b></a></li>
+                <li><a href="./status-pedido.html"><b>Rastrear Pedido</b></a></li>
+                <li><a href="./perguntas-frequentes.html"><b>Perguntas Frequentes</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="conteudo" style="text-align: center;">
+        <div class="linha">
+            <h1>Status do pedido</h1>
+            <h2><br>Rastreie seus objetos, encomendas ou pacotes:</h2>
+            <form>
+                <label>Digite seu Codigo de Rastreio:</label><br>
+                <input id="codRastreio" maxlength="50" type="text" />
+                <input onclick="rastrear()" type="button" value="Rastrear" />
+            </form>
+            <div id="alerta" style="display: none;">
+                <h2>{{ msg }}</h2>
+            </div>
+        </div>
+        <h2><br>Como funciona o rastreio do seu pedido?</h2>
+        <p>O rastreamento é feito pela plataforma do Correios. <br>
+            Após você inserir o código de rastreio que enviamos para vocês por e-mail no campo acima,<br> encaminharemos para a plataforma do Correios para apresentar o rastreamento do seu pedido.<br>
+            Caso apresente algum problema no rastreio, contate-nos pelo e-mail: suporte@pietaeshop.com.br<br>
+            Estamos dispostos a lhe ajudar desde a compra até a entrega do produto!<br> <br></p>
+    </div>
+
+    <footer>
+        <span class="rodape"> Desenvolvido Por Crislaine Tatiane Timm e Matheus Pieta da Cunha</span>
+    </footer>
+</body>
+</html>
