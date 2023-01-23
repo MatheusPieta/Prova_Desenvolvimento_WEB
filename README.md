@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Pieta-E shop é um site de vendas de produtos eletronicos.
 
-- [Visite o projeto online](https://matheuspieta.github.io/prova_desenvolvimento_web/)
+- [Visite o projeto online](https://matheuspieta.github.io/Prova_Desenvolvimento_WEB/)
 
 ## :memo: Licença
 
